@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="5" ignored="7" total="15" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="153746" started-at="2022-02-24T15:32:14 IST" finished-at="2022-02-24T15:34:47 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="153746" started-at="2022-02-24T15:32:14 IST" finished-at="2022-02-24T15:34:47 IST">
+      <class name="com.gcr.scripts.InternetWindow">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.gcr.scripts.InternetWindow@612fc6eb]" name="beforeClass" is-config="true" duration-ms="1640" started-at="2022-02-24T15:32:40 IST" finished-at="2022-02-24T15:32:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="InternetDropdownTestcase()[pri:0, instance:com.gcr.scripts.InternetWindow@612fc6eb]" name="InternetDropdownTestcase" duration-ms="12770" started-at="2022-02-24T15:32:42 IST" finished-at="2022-02-24T15:32:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InternetDropdownTestcase -->
+        <test-method status="PASS" signature="methodName(java.lang.reflect.Method)[pri:0, instance:com.gcr.scripts.InternetWindow@612fc6eb]" name="methodName" is-config="true" duration-ms="0" started-at="2022-02-24T15:32:42 IST" finished-at="2022-02-24T15:32:42 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.gcr.scripts.InternetWindow.InternetDropdownTestcase() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodName -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.gcr.scripts.InternetWindow@612fc6eb]" name="afterClass" is-config="true" duration-ms="1115" started-at="2022-02-24T15:32:54 IST" finished-at="2022-02-24T15:32:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.gcr.scripts.InternetWindow -->
+      <class name="com.gcr.scripts.InternetDynamicLoading">
+        <test-method status="PASS" signature="generateReport()[pri:0, instance:com.gcr.scripts.InternetDynamicLoading@76a3e297]" name="generateReport" is-config="true" duration-ms="404" started-at="2022-02-24T15:32:14 IST" finished-at="2022-02-24T15:32:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.gcr.scripts.InternetDynamicLoading@76a3e297]" name="beforeClass" is-config="true" duration-ms="8521" started-at="2022-02-24T15:32:14 IST" finished-at="2022-02-24T15:32:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="methodName(java.lang.reflect.Method)[pri:0, instance:com.gcr.scripts.InternetDynamicLoading@76a3e297]" name="methodName" is-config="true" duration-ms="24" started-at="2022-02-24T15:32:23 IST" finished-at="2022-02-24T15:32:23 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.gcr.scripts.InternetDynamicLoading.InternetDynamicLoadingTestCase() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodName -->
+        <test-method status="FAIL" signature="InternetDynamicLoadingTestCase()[pri:0, instance:com.gcr.scripts.InternetDynamicLoading@76a3e297]" name="InternetDynamicLoadingTestCase" duration-ms="15530" started-at="2022-02-24T15:32:23 IST" finished-at="2022-02-24T15:32:38 IST">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //h4[normalize-space()='hello world!'] (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h4[normalize-space()='hello world!'] (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at com.gcr.wdcmds.ActionDriver.explicitWait(ActionDriver.java:144)
+at com.gcr.reuse.InternetFunctions.dynamicLoadingText(InternetFunctions.java:36)
+at com.gcr.scripts.InternetDynamicLoading.InternetDynamicLoadingTestCase(InternetDynamicLoading.java:13)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h4[normalize-space()='hello world!']"}
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-0VM259J4', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\karis\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52341}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e05d4621e3a19cf5f0515891353ac0a5
+*** Element info: {Using=xpath, value=//h4[normalize-space()='hello world!']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InternetDynamicLoadingTestCase -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.gcr.scripts.InternetDynamicLoading@76a3e297]" name="afterClass" is-config="true" duration-ms="1877" started-at="2022-02-24T15:32:38 IST" finished-at="2022-02-24T15:32:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.gcr.scripts.InternetDynamicLoading -->
+      <class name="com.gcr.scripts.AddProductToCart">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.gcr.scripts.AddProductToCart@1060b431]" name="beforeClass" is-config="true" duration-ms="2039" started-at="2022-02-24T15:32:56 IST" finished-at="2022-02-24T15:32:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="FAIL" signature="AddProductToCartTestCase()[pri:0, instance:com.gcr.scripts.AddProductToCart@1060b431]" name="AddProductToCartTestCase" duration-ms="23757" started-at="2022-02-24T15:32:58 IST" finished-at="2022-02-24T15:33:21 IST">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=98.0.4758.102)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-0VM259J4', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\karis\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52407}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d958d905dc7789903a6ba3975951f8e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=98.0.4758.102)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-0VM259J4', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\karis\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52407}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d958d905dc7789903a6ba3975951f8e
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at com.gcr.wdcmds.ActionDriver.click(ActionDriver.java:50)
+at com.gcr.reuse.CommonFunctions.addToCart(CommonFunctions.java:71)
+at com.gcr.scripts.AddProductToCart.AddProductToCartTestCase(AddProductToCart.java:13)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddProductToCartTestCase -->
+        <test-method status="PASS" signature="methodName(java.lang.reflect.Method)[pri:0, instance:com.gcr.scripts.AddProductToCart@1060b431]" name="methodName" is-config="true" duration-ms="0" started-at="2022-02-24T15:32:58 IST" finished-at="2022-02-24T15:32:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.gcr.scripts.AddProductToCart.AddProductToCartTestCase() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodName -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.gcr.scripts.AddProductToCart@1060b431]" name="afterClass" is-config="true" duration-ms="2373" started-at="2022-02-24T15:33:21 IST" finished-at="2022-02-24T15:33:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.gcr.scripts.AddProductToCart -->
+      <class name="com.gcr.scripts.AutomationContactUs_Excel">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.gcr.scripts.AutomationContactUs_Excel@612679d6]" name="beforeClass" is-config="true" duration-ms="1801" started-at="2022-02-24T15:33:24 IST" finished-at="2022-02-24T15:33:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="methodName(java.lang.reflect.Method)[pri:0, instance:com.gcr.scripts.AutomationContactUs_Excel@612679d6]" name="methodName" is-config="true" duration-ms="0" started-at="2022-02-24T15:33:26 IST" finished-at="2022-02-24T15:33:26 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.gcr.scripts.AutomationContactUs_Excel.AutomationContactUs_ExcelTestcase() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodName -->
+        <test-method status="FAIL" signature="AutomationContactUs_ExcelTestcase()[pri:0, instance:com.gcr.scripts.AutomationContactUs_Excel@612679d6]" name="AutomationContactUs_ExcelTestcase" duration-ms="6247" started-at="2022-02-24T15:33:26 IST" finished-at="2022-02-24T15:33:32 IST">
+          <exception class="com.codoid.products.exception.FilloException">
+            <message>
+              <![CDATA[contactus table is not found]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.codoid.products.exception.FilloException: contactus table is not found
+at com.codoid.products.fillo.SelectExcelUtil.runSelectQuery(SelectExcelUtil.java:58)
+at com.codoid.products.fillo.Select.getRecordset(Select.java:61)
+at com.codoid.products.fillo.Connection.executeQuery(Connection.java:64)
+at com.gcr.scripts.AutomationContactUs_Excel.AutomationContactUs_ExcelTestcase(AutomationContactUs_Excel.java:20)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.codoid.products.exception.FilloException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AutomationContactUs_ExcelTestcase -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.gcr.scripts.AutomationContactUs_Excel@612679d6]" name="afterClass" is-config="true" duration-ms="1224" started-at="2022-02-24T15:33:32 IST" finished-at="2022-02-24T15:33:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.gcr.scripts.AutomationContactUs_Excel -->
+      <class name="com.gcr.scripts.JqueryuiFrame">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.gcr.scripts.JqueryuiFrame@11758f2a]" name="beforeClass" is-config="true" duration-ms="1717" started-at="2022-02-24T15:33:33 IST" finished-at="2022-02-24T15:33:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="JqueryFrameTestCase()[pri:0, instance:com.gcr.scripts.JqueryuiFrame@11758f2a]" name="JqueryFrameTestCase" duration-ms="5276" started-at="2022-02-24T15:33:35 IST" finished-at="2022-02-24T15:33:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JqueryFrameTestCase -->
+        <test-method status="PASS" signature="methodName(java.lang.reflect.Method)[pri:0, instance:com.gcr.scripts.JqueryuiFrame@11758f2a]" name="methodName" is-config="true" duration-ms="0" started-at="2022-02-24T15:33:35 IST" finished-at="2022-02-24T15:33:35 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.gcr.scripts.JqueryuiFrame.JqueryFrameTestCase() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodName -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.gcr.scripts.JqueryuiFrame@11758f2a]" name="afterClass" is-config="true" duration-ms="936" started-at="2022-02-24T15:33:40 IST" finished-at="2022-02-24T15:33:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.gcr.scripts.JqueryuiFrame -->
+      <class name="com.gcr.scripts.InternetDropdown">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.gcr.scripts.InternetDropdown@74ad1f1f]" name="beforeClass" is-config="true" duration-ms="1763" started-at="2022-02-24T15:34:30 IST" finished-at="2022-02-24T15:34:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="FAIL" signature="InternetDropdownTestcase()[pri:0, instance:com.gcr.scripts.InternetDropdown@74ad1f1f]" name="InternetDropdownTestcase" duration-ms="14482" started-at="2022-02-24T15:34:32 IST" finished-at="2022-02-24T15:34:46 IST">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate element with text: Option2
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-0VM259J4', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
+Driver info: driver.version: ActionDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Option2
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-0VM259J4', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
+Driver info: driver.version: ActionDriver
+at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
+at com.gcr.wdcmds.ActionDriver.selectByVisibleText(ActionDriver.java:110)
+at com.gcr.reuse.InternetFunctions.selectDDValueFromDDList(InternetFunctions.java:25)
+at com.gcr.scripts.InternetDropdown.InternetDropdownTestcase(InternetDropdown.java:13)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InternetDropdownTestcase -->
+        <test-method status="PASS" signature="methodName(java.lang.reflect.Method)[pri:0, instance:com.gcr.scripts.InternetDropdown@74ad1f1f]" name="methodName" is-config="true" duration-ms="0" started-at="2022-02-24T15:34:32 IST" finished-at="2022-02-24T15:34:32 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.gcr.scripts.InternetDropdown.InternetDropdownTestcase() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodName -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.gcr.scripts.InternetDropdown@74ad1f1f]" name="afterClass" is-config="true" duration-ms="979" started-at="2022-02-24T15:34:46 IST" finished-at="2022-02-24T15:34:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.gcr.scripts.InternetDropdown -->
+      <class name="com.gcr.scripts.AutomationContactus">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.gcr.scripts.AutomationContactus@1b26f7b2]" name="beforeClass" is-config="true" duration-ms="1787" started-at="2022-02-24T15:34:00 IST" finished-at="2022-02-24T15:34:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="methodName(java.lang.reflect.Method)[pri:0, instance:com.gcr.scripts.AutomationContactus@1b26f7b2]" name="methodName" is-config="true" duration-ms="1" started-at="2022-02-24T15:34:02 IST" finished-at="2022-02-24T15:34:02 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.gcr.scripts.AutomationContactus.AutomationContactUsTestcase() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodName -->
+        <test-method status="FAIL" signature="AutomationContactUsTestcase()[pri:0, instance:com.gcr.scripts.AutomationContactus@1b26f7b2]" name="AutomationContactUsTestcase" duration-ms="27263" started-at="2022-02-24T15:34:02 IST" finished-at="2022-02-24T15:34:29 IST">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Contact Us"}
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-0VM259J4', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\karis\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52535}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d96f2ac209585aeef52ac5007749ff68
+*** Element info: {Using=link text, value=Contact Us}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Contact Us"}
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-0VM259J4', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\karis\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52535}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d96f2ac209585aeef52ac5007749ff68
+*** Element info: {Using=link text, value=Contact Us}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.gcr.wdcmds.ActionDriver.click(ActionDriver.java:50)
+at com.gcr.reuse.AutomationFunctions.ContactUs(AutomationFunctions.java:24)
+at com.gcr.scripts.AutomationContactus.AutomationContactUsTestcase(AutomationContactus.java:14)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AutomationContactUsTestcase -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.gcr.scripts.AutomationContactus@1b26f7b2]" name="afterClass" is-config="true" duration-ms="1053" started-at="2022-02-24T15:34:29 IST" finished-at="2022-02-24T15:34:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.gcr.scripts.AutomationContactus -->
+      <class name="com.gcr.scripts.InternetHover">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.gcr.scripts.InternetHover@e720b71]" name="beforeClass" is-config="true" duration-ms="2619" started-at="2022-02-24T15:33:41 IST" finished-at="2022-02-24T15:33:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="InternetDropdownTestcase()[pri:0, instance:com.gcr.scripts.InternetHover@e720b71]" name="InternetDropdownTestcase" duration-ms="15449" started-at="2022-02-24T15:33:44 IST" finished-at="2022-02-24T15:33:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InternetDropdownTestcase -->
+        <test-method status="PASS" signature="methodName(java.lang.reflect.Method)[pri:0, instance:com.gcr.scripts.InternetHover@e720b71]" name="methodName" is-config="true" duration-ms="0" started-at="2022-02-24T15:33:44 IST" finished-at="2022-02-24T15:33:44 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.gcr.scripts.InternetHover.InternetDropdownTestcase() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodName -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.gcr.scripts.InternetHover@e720b71]" name="afterClass" is-config="true" duration-ms="1015" started-at="2022-02-24T15:33:59 IST" finished-at="2022-02-24T15:34:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.gcr.scripts.InternetHover -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

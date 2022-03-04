@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.gcr.scripts.AddProductToCart">
+        <methods>
+          <include name="AddProductToCartTestCase"/>
+          <include name="beforeClass"/>
+          <include name="generateReport"/>
+          <include name="afterClass"/>
+          <include name="methodName"/>
+        </methods>
+      </class> <!-- com.gcr.scripts.AddProductToCart -->
+      <class name="com.gcr.scripts.InternetDropdown">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="generateReport"/>
+          <include name="InternetDropdownTestcase"/>
+          <include name="afterClass"/>
+          <include name="methodName"/>
+        </methods>
+      </class> <!-- com.gcr.scripts.InternetDropdown -->
+      <class name="com.gcr.scripts.AutomationContactUs_Excel">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="generateReport"/>
+          <include name="AutomationContactUs_ExcelTestcase"/>
+          <include name="afterClass"/>
+          <include name="methodName"/>
+        </methods>
+      </class> <!-- com.gcr.scripts.AutomationContactUs_Excel -->
+      <class name="com.gcr.scripts.InternetDynamicLoading">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="InternetDynamicLoadingTestCase"/>
+          <include name="generateReport"/>
+          <include name="afterClass"/>
+          <include name="methodName"/>
+        </methods>
+      </class> <!-- com.gcr.scripts.InternetDynamicLoading -->
+      <class name="com.gcr.scripts.AutomationContactus">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="generateReport"/>
+          <include name="afterClass"/>
+          <include name="AutomationContactUsTestcase"/>
+          <include name="methodName"/>
+        </methods>
+      </class> <!-- com.gcr.scripts.AutomationContactus -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
